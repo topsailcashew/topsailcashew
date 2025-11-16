@@ -1,5 +1,11 @@
-# Firebase Studio
+# 🌰 topsailcashew's Stomping Grounds
 
-This is a NextJS starter in Firebase Studio.
+This is the source code for my personal portfolio website.
 
-To get started, take a look at src/app/page.tsx.
+It's a place to showcase my work, my skills, and my questionable sense of humor. Built with Next.js, React, and Tailwind CSS, it's a living example of my coding style (and my coffee consumption).
+
+Feel free to browse the code, but please don't ask me to fix your printer.
+
+---
+
+This project was bootstrapped with Firebase Studio.
