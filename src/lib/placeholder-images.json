@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "A screenshot of an e-commerce platform's homepage.",
+      "imageUrl": "https://images.unsplash.com/photo-1660198348421-d80e956c7db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY29tbWVyY2UlMjBwbGF0Zm9ybXxlbnwwfHx8fDE3NjMzMTIzNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce platform"
+    },
+    {
+      "id": "project-2",
+      "description": "A task management application dashboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1758411898471-fa144c487c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhcHB8ZW58MHx8fHwxNzYzMjc3NzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard app"
+    },
+    {
+      "id": "project-3",
+      "description": "A website builder interface with drag and drop elements.",
+      "imageUrl": "https://images.unsplash.com/photo-1635405050330-b0824eb1bf26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2Vic2l0ZSUyMGJ1aWxkZXJ8ZW58MHx8fHwxNzYzMjM0ODk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "website builder"
+    },
+    {
+      "id": "project-4",
+      "description": "A blog with a clean and minimalist design.",
+      "imageUrl": "https://images.unsplash.com/photo-1602104030625-e83452c7b359?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxibG9nJTIwYXJ0aWNsZXxlbnwwfHx8fDE3NjMyMzMxNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blog article"
+    }
+  ]
 }

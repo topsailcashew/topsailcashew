@@ -11,8 +11,12 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        headline: ['"Space Grotesk"', 'sans-serif'],
         code: ['monospace'],
+      },
+      boxShadow: {
+        brutalist: '4px 4px 0px hsl(var(--primary))',
+        'brutalist-lg': '8px 8px 0px hsl(var(--primary))',
       },
       colors: {
         background: 'hsl(var(--background))',
