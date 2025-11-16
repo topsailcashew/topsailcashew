@@ -39,8 +39,8 @@ export function Footer() {
             ))}
           </div>
           <p className="text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Senje's Stomping Grounds. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} topsailcashew's Stomping Grounds.
+            All rights reserved.
           </p>
         </div>
       </div>

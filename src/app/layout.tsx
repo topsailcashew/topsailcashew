@@ -5,8 +5,8 @@ import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
 
 export const metadata: Metadata = {
-  title: "Senje's Stomping Grounds",
-  description: 'A portfolio for Senje, a web developer who loves building things for fun.',
+  title: "topsailcashew's Stomping Grounds",
+  description: 'A portfolio for a web developer who loves building things for fun.',
 };
 
 export default function RootLayout({

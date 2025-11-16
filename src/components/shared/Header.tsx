@@ -21,7 +21,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="font-headline text-2xl font-bold">
-            Senje's Stomping Grounds
+            topsailcashew's Stomping Grounds
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

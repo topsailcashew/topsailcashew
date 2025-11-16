@@ -8,12 +8,11 @@ export function Hero() {
       <div className="container mx-auto px-4">
         <div className="min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-            Senje's Stomping Grounds
+            topsailcashew's Stomping Grounds
           </h1>
           <p className="mt-6 text-lg md:text-xl max-w-3xl text-muted-foreground">
-            Hi, I'm Senje. A web developer who finds joy in crafting unique and
-            engaging digital experiences just for the fun of it. Welcome to my
-            corner of the internet.
+            Welcome to topsailcashew. This is not about sails. And it's not
+            about cashews.
           </p>
           <Button
             asChild
