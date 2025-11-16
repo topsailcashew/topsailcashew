@@ -8,7 +8,7 @@ export function Hero() {
       <div className="container mx-auto px-4">
         <div className="min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-            topsailcashew's Stomping Grounds
+            topsailcashew
           </h1>
           <p className="mt-6 text-lg md:text-xl max-w-3xl text-muted-foreground">
             Welcome to topsailcashew. This is not about sails. And it's not
