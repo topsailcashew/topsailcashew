@@ -20,9 +20,9 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {projects.map((project, index) => (
-            <div key={project.id} className={index % 2 !== 0 ? 'md:mt-12' : ''}>
+            <div key={project.id}>
               <WindowFrame title={`Project-${index + 1}.exe`}>
                 <div className="group">
                   <div className="overflow-hidden border-2 border-primary rounded-sm mb-4">
@@ -38,7 +38,7 @@ export function Projects() {
                   <h3 className="font-headline text-2xl font-bold">
                     Project {index + 1}
                   </h3>
-                  <p className="mt-2 text-muted-foreground">
+                  <p className="mt-2 text-muted-foreground line-clamp-3">
                     This is a placeholder for a project description. It describes what the project is about, the technologies used, and the challenges overcome.
                   </p>
                   <div className='my-4 flex flex-wrap gap-2'>
