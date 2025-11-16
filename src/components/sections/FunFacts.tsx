@@ -1,22 +1,26 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Wand2 } from 'lucide-react';
 import { WindowFrame } from '../shared/WindowFrame';
 
 const facts = [
-  "I've re-watched 'The Office' more times than I can count.",
-  'I believe pineapple belongs on pizza. No debates.',
-  'My plants probably have more social life than I do.',
-  'I can solve a Rubik\'s cube in under a minute.',
-  'I have a collection of over 50 vintage computer keyboards.',
-  'I once built a robot that serves butter.',
-  "My favorite part of coding is deleting code that's no longer needed.",
+  "I've watched “The Office” so many times I answer emails like Michael Scott.",
+  "Pineapple on pizza? Yes. Fight me.",
+  "My plants judge me. I feel it.",
+  "I can solve a Rubik’s Cube in under a minute. Faster if threatened.",
+  "I own more vintage keyboards than friends.",
+  "I built a robot that serves butter. No follow-up questions.",
+  "My favorite part of coding is deleting 400 lines and watching everything still work.",
 ];
 
 export function FunFacts() {
-  const [fact, setFact] = useState(facts[0]);
+  const [fact, setFact] = useState<string | null>(null);
+
+  useEffect(() => {
+    setFact(facts[Math.floor(Math.random() * facts.length)]);
+  }, []);
 
   const getNewFact = () => {
     let newFact;
@@ -31,10 +35,10 @@ export function FunFacts() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl md:text-5xl font-bold">
-            Quirks & Curiosities
+            🤪 Quirks & Curiosities
           </h2>
           <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
-            A little glimpse into the human behind the code.
+            Because you're not hiring a robot. Probably.
           </p>
         </div>
 
@@ -42,7 +46,7 @@ export function FunFacts() {
           <WindowFrame>
             <div className="text-center p-6">
               <p className="text-xl font-medium min-h-[6rem] flex items-center justify-center">
-                "{fact}"
+                {fact ? `"${fact}"` : 'Generating a quirky fact...'}
               </p>
               <Button
                 variant="outline"

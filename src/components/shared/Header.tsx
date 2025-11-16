@@ -7,9 +7,9 @@ import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
 
 const navLinks = [
-  { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#fun-facts', label: 'Fun Facts' },
+  { href: '#projects', label: 'Creations' },
+  { href: '#skills', label: 'Toolbox' },
+  { href: '#fun-facts', label: 'Quirks' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -21,7 +21,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="font-headline text-2xl font-bold">
-            topsailcashew
+            🌰 topsailcashew
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

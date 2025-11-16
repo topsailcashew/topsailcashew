@@ -81,11 +81,12 @@ export function Contact() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl md:text-5xl font-bold">
-            Let's Talk
+            📬 Let's Talk
           </h2>
-          <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project, an idea, or just want to say hi? Drop me a line.
-          </p>
+          <div className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p>Pitch your idea. Ask a question. Send memes.</p>
+            <p>I accept all forms of communication.</p>
+          </div>
         </div>
 
         <div className="max-w-2xl mx-auto">
@@ -135,7 +136,7 @@ export function Contact() {
                       <FormLabel className="text-lg">Message</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Tell me what's on your mind..."
+                          placeholder="Please don’t ask me to fix your printer."
                           {...field}
                           className="border-2 text-base p-6 min-h-[150px]"
                         />

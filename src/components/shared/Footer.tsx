@@ -24,23 +24,26 @@ export function Footer() {
     <footer className="bg-background border-t-2 border-primary">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            {socialLinks.map((social) => (
-              <Link
-                key={social.href}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.label}
-                className="hover:text-muted-foreground transition-colors"
-              >
-                {social.icon}
-              </Link>
-            ))}
+          <div>
+             <p className='text-sm text-muted-foreground'>Where I pretend to be professional:</p>
+            <div className="flex items-center gap-4 mt-2">
+              {socialLinks.map((social) => (
+                <Link
+                  key={social.href}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="hover:text-muted-foreground transition-colors"
+                >
+                  {social.icon}
+                </Link>
+              ))}
+            </div>
           </div>
           <p className="text-center text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} topsailcashew.
-            All rights reserved.
+            All questionable decisions reserved.
           </p>
         </div>
       </div>
