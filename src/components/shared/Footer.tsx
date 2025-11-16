@@ -1,21 +1,11 @@
 import Link from 'next/link';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const socialLinks = [
   {
     href: 'https://github.com',
     icon: <Github className="h-6 w-6" />,
     label: 'GitHub',
-  },
-  {
-    href: 'https://linkedin.com',
-    icon: <Linkedin className="h-6 w-6" />,
-    label: 'LinkedIn',
-  },
-  {
-    href: 'https://twitter.com',
-    icon: <Twitter className="h-6 w-6" />,
-    label: 'Twitter',
   },
 ];
 
