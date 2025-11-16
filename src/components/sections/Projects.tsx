@@ -3,14 +3,7 @@ import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
 import { Badge } from '../ui/badge';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { WindowFrame } from '../shared/WindowFrame';
 
 const projects = PlaceHolderImages;
 
@@ -27,49 +20,49 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card
+            <WindowFrame
               key={project.id}
-              className="flex flex-col overflow-hidden shadow-lg transition-all hover:shadow-xl hover:-translate-y-1"
+              title={`project-${index + 1}.js`}
+              className="flex flex-col"
             >
-              <CardHeader className="p-0">
-                <div className="overflow-hidden">
+              <div className="flex flex-col h-full">
+                <div className="relative h-48 overflow-hidden -m-6 mb-6 border-b-2 border-primary">
                   <Image
                     src={project.imageUrl}
                     alt={project.description}
-                    width={600}
-                    height={400}
-                    className="w-full h-40 object-cover"
+                    fill
+                    className="object-cover"
                     data-ai-hint={project.imageHint}
                   />
                 </div>
-              </CardHeader>
-              <CardContent className="p-4 flex-grow">
-                <CardTitle className="text-2xl font-bold mb-2">
-                  Project {index + 1}
-                </CardTitle>
-                <CardDescription className="text-sm text-muted-foreground line-clamp-3">
-                  This is a placeholder for a project description. It describes
-                  what the project is about, the technologies used, and the
-                  challenges overcome.
-                </CardDescription>
-                <div className="my-4 flex flex-wrap gap-2">
-                  <Badge variant="outline">React</Badge>
-                  <Badge variant="outline">Next.js</Badge>
-                  <Badge variant="outline">Tailwind CSS</Badge>
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold mb-2 font-headline">
+                    Project {index + 1}
+                  </h3>
+                  <p className="text-sm text-muted-foreground line-clamp-3 mb-4">
+                    This is a placeholder for a project description. It
+                    describes what the project is about, the technologies used,
+                    and the challenges overcome.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline" className="border-2 border-primary">React</Badge>
+                    <Badge variant="outline" className="border-2 border-primary">Next.js</Badge>
+                    <Badge variant="outline" className="border-2 border-primary">Tailwind CSS</Badge>
+                  </div>
                 </div>
-              </CardContent>
-              <CardFooter className="p-4 pt-0 mt-auto">
-                <Link
-                  href="#"
-                  className="inline-flex items-center font-bold group"
-                >
-                  View Project
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </CardFooter>
-            </Card>
+                <div className="mt-6 pt-4 border-t border-dashed">
+                  <Link
+                    href="#"
+                    className="inline-flex items-center font-bold group"
+                  >
+                    View Project
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </WindowFrame>
           ))}
         </div>
       </div>
