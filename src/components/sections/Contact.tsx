@@ -39,7 +39,7 @@ function SubmitButton() {
       className="w-full border-2 border-primary text-lg px-8 py-6 shadow-brutalist transition-all hover:shadow-none hover:translate-x-1 hover:translate-y-1 disabled:opacity-50 disabled:shadow-none disabled:translate-x-0 disabled:translate-y-0"
     >
       {pending ? "Sending..." : "Send Message"}
-       <ArrowRight className="ml-2 h-5 w-5" />
+      <ArrowRight className="ml-2 h-5 w-5" />
     </Button>
   );
 }
@@ -103,7 +103,7 @@ export function Contact() {
                         <Input
                           placeholder="Your Name"
                           {...field}
-                          className="border-2 text-base p-6"
+                          className="border-2 text-base p-6 focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-primary transition-all"
                         />
                       </FormControl>
                       <FormMessage />
@@ -121,7 +121,7 @@ export function Contact() {
                           type="email"
                           placeholder="your.email@example.com"
                           {...field}
-                          className="border-2 text-base p-6"
+                          className="border-2 text-base p-6 focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-primary transition-all"
                         />
                       </FormControl>
                       <FormMessage />
@@ -138,7 +138,7 @@ export function Contact() {
                         <Textarea
                           placeholder="Please don’t ask me to fix your printer."
                           {...field}
-                          className="border-2 text-base p-6 min-h-[150px]"
+                          className="border-2 text-base p-6 min-h-[150px] focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-primary transition-all"
                         />
                       </FormControl>
                       <FormMessage />

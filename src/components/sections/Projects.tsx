@@ -70,45 +70,46 @@ export function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <WindowFrame
-              key={project.id}
-              title={`project-${index + 1}.js`}
-              className="flex flex-col"
-            >
-              <div className="flex flex-col h-full">
-                <div className="relative aspect-[4/3] overflow-hidden -m-6 mb-6 border-b-2 border-primary">
-                  <Image
-                    src={project.imageUrl}
-                    alt={project.description as string}
-                    fill
-                    className="object-cover"
-                    data-ai-hint={project.imageHint}
-                  />
-                </div>
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-bold mb-2 font-headline">
-                    {project.title}
-                  </h3>
-                  <div className="text-sm text-muted-foreground mb-4">
-                    {project.description}
+            <div key={project.id} className="group transition-all duration-300 hover:-translate-y-2">
+              <WindowFrame
+                title={`project-${index + 1}.js`}
+                className="flex flex-col h-full shadow-brutalist transition-shadow duration-300 group-hover:shadow-brutalist-lg"
+              >
+                <div className="flex flex-col h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden -m-6 mb-6 border-b-2 border-primary">
+                    <Image
+                      src={project.imageUrl}
+                      alt={project.description as string}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      data-ai-hint={project.imageHint}
+                    />
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="border-2 border-primary">React</Badge>
-                    <Badge variant="outline" className="border-2 border-primary">Next.js</Badge>
-                    <Badge variant="outline" className="border-2 border-primary">Tailwind CSS</Badge>
+                  <div className="flex-grow">
+                    <h3 className="text-2xl font-bold mb-2 font-headline">
+                      {project.title}
+                    </h3>
+                    <div className="text-sm text-muted-foreground mb-4">
+                      {project.description}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline" className="border-2 border-primary bg-background">React</Badge>
+                      <Badge variant="outline" className="border-2 border-primary bg-background">Next.js</Badge>
+                      <Badge variant="outline" className="border-2 border-primary bg-background">Tailwind CSS</Badge>
+                    </div>
+                  </div>
+                  <div className="mt-6 pt-4 border-t border-dashed">
+                    <Link
+                      href="#"
+                      className="inline-flex items-center font-bold group/link"
+                    >
+                      <strong className="group-hover/link:underline decoration-wavy decoration-primary">{project.linkText}</strong>
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                    </Link>
                   </div>
                 </div>
-                <div className="mt-6 pt-4 border-t border-dashed">
-                  <Link
-                    href="#"
-                    className="inline-flex items-center font-bold group"
-                  >
-                    <strong>{project.linkText}</strong>
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </div>
-              </div>
-            </WindowFrame>
+              </WindowFrame>
+            </div>
           ))}
         </div>
       </div>

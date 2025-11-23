@@ -48,7 +48,7 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-medium hover:underline"
+                  className="font-medium relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
                 >
                   {link.label}
                 </Link>
